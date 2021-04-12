@@ -1,0 +1,25 @@
+:root {
+    font-size: 12px;
+}
+#accomodation {
+    display: grid;
+    grid-template-areas:
+        "accomodation-title accomodation-title"
+        "accomodation-card1 accomodation-card2"
+        "accomodation-card3 accomodation-card4"
+        "accomodation-card5 accomodation-card6"
+        "showmore showmore";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 240px) auto;
+}
+#activities {
+    display: grid;
+    grid-template-areas:
+        "activities-title activities-title"
+        "port pomegue"
+        "iles parc"
+        "dame longchamp";
+    grid-template-rows: auto repeat(3, 220px);
+    grid-gap: 20px;
+    padding: 20px;
+}
