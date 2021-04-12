@@ -279,7 +279,7 @@ header nav ul li:nth-child(4) a {
         "accomodation-card6"
         "showmore";
     grid-template-columns: 1fr;
-    grid-template-rows: auto repeat(6, 170px) auto;
+    grid-template-rows: auto repeat(6, 210px) auto;
     grid-gap: 20px;
     padding: 20px;
 }
@@ -328,6 +328,17 @@ header nav ul li:nth-child(4) a {
     border-radius: 1rem;
 }
 
+.accomodation-card1 figure,
+.accomodation-card2 figure,
+.accomodation-card3 figure,
+.accomodation-card4 figure,
+.accomodation-card5 figure,
+.accomodation-card6 figure {
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+}
+
 .accomodation-card1 img,
 .accomodation-card2 img,
 .accomodation-card3 img,
@@ -336,19 +347,8 @@ header nav ul li:nth-child(4) a {
 .accomodation-card6 img {
     width: 100%;
     object-fit: cover;
-    height: 100%;
-    border-radius: 1rem 1rem 0 0;
-}
-
-.accomodation-card1 figure,
-.accomodation-card2 figure,
-.accomodation-card3 figure,
-.accomodation-card4 figure,
-.accomodation-card5 figure,
-.accomodation-card6 figure {
     height: calc(100% - 75px);
-    width: 100%;
-    padding: 3px;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .accomodation-card1 figcaption,
@@ -360,6 +360,7 @@ header nav ul li:nth-child(4) a {
     height: 75px;
     width: 100%;
     color: black;
+    padding: 10px;
 }
 
 .showmore {
