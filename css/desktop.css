@@ -1,0 +1,511 @@
+:root {
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("fonts/Raleway/Raleway-Bold.ttf");
+}
+
+body {
+    font-family: Raleway, Roboto, sans-serif;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-areas:
+            "header"
+            "search"
+            "accomodation""populary"
+            "activities"
+            "footer";
+}
+
+.search-bar {
+    display: flex;
+    margin: 20px 0;
+}
+
+label {
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    background-color: #F2F2F2;
+}
+
+#site-search {
+    padding: 0 20px 0 10px;
+    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    font-weight: bold;
+    color: black;
+    width: calc(100% - 70px);
+}
+
+.btn-search {
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+
+.btnfiltre {
+    color: black;
+    font-weight: bold;
+    border: 1px solid silver;
+    border-radius: 20px;
+    height: 40px;
+    margin: 0 10px 10px 0;
+    background-color: white;
+}
+
+.btnfiltre > span {
+    padding: 0 10px;
+}
+
+#search h3 {
+    margin-bottom: 10px;
+}
+
+
+#search p {
+    font-size: 1.4rem;
+}
+
+#search p > i {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid silver;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    color: #0065FC;
+}
+
+i.fas.fa-money-bill-wave,
+i.fa.fa-child,
+i.fas.fa-heart,
+i.fas.fa-dog {
+    background-color: #d6e7ff;
+    color: #0065FC;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: -2px;
+}
+
+i.fas.fa-chart-line {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#header {
+    grid-area: header;
+}
+
+#search {
+    grid-area: search;
+    padding: 10px;
+}
+
+#populary {
+    grid-area: populary;
+    background-color: #f3f3f3;
+}
+
+#accomodation {
+    grid-area: accomodation;
+}
+
+#activities {
+    grid-area: activities;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #f3f3f3
+}
+
+header nav ul {
+
+}
+
+header nav ul li:nth-child(4) {
+    grid-area: navbar-register;
+}
+
+header nav ul li:nth-child(2) a, header nav ul li:nth-child(3) a {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 800;
+}
+
+header nav ul li:nth-child(2) a {
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+}
+
+header nav ul li:nth-child(3) a {
+    color: black;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+header nav ul li:nth-child(4) a {
+    display: block;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 10px;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#populary {
+    display: grid;
+    grid-template-areas:
+        "titre"
+        "soleil"
+        "coeur"
+        "hotelbleu";
+    grid-template-rows: auto 120px 120px 120px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+
+.populary-title {
+    grid-area: titre;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populary-card1 {
+    grid-area: soleil;
+}
+
+.populary-card2 {
+    grid-area: coeur;
+}
+
+.populary-card3 {
+    grid-area: hotelbleu;
+}
+
+.populary-card1 section,
+.populary-card2 section,
+.populary-card3 section {
+    height: 100%;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.populary-card1 figure,
+.populary-card2 figure,
+.populary-card3 figure {
+    height: 100%;
+    display: flex;
+}
+
+.populary-card1 img,
+.populary-card2 img,
+.populary-card3 img {
+    object-fit: cover;
+    width: 35%;
+    border-radius: 1rem 0 0 1rem;
+    margin: 5px;
+}
+
+.populary-card1 figcaption,
+.populary-card2 figcaption,
+.populary-card3 figcaption {
+    width: 60%;
+    padding: 10px;
+    position: relative;
+}
+
+.populary-card1 figcaption > div,
+.populary-card2 figcaption > div,
+.populary-card3 figcaption > div{
+    position: absolute;
+    bottom: 5px;
+}
+
+#accomodation {
+    display: grid;
+    grid-template-areas:
+        "accomodation-title"
+        "accomodation-card1"
+        "accomodation-card2"
+        "accomodation-card3"
+        "accomodation-card4"
+        "accomodation-card5"
+        "accomodation-card6"
+        "showmore";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(6, 210px) auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.accomodation-title {
+    grid-area: accomodation-title;
+}
+
+.accomodation-card1 {
+    grid-area: accomodation-card1;
+}
+
+.accomodation-card2 {
+    grid-area: accomodation-card2;
+}
+
+.accomodation-card3 {
+    grid-area: accomodation-card3;
+}
+
+.accomodation-card4 {
+    grid-area: accomodation-card4;
+}
+
+.accomodation-card5 {
+    grid-area: accomodation-card5;
+}
+
+.accomodation-card6 {
+    grid-area: accomodation-card6;
+}
+
+.showmore {
+    grid-area: showmore;
+}
+
+
+.accomodation-card1 section,
+.accomodation-card2 section,
+.accomodation-card3 section,
+.accomodation-card4 section,
+.accomodation-card5 section,
+.accomodation-card6 section {
+    height: 100%;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1rem;
+}
+
+.accomodation-card1 figure,
+.accomodation-card2 figure,
+.accomodation-card3 figure,
+.accomodation-card4 figure,
+.accomodation-card5 figure,
+.accomodation-card6 figure {
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+}
+
+.accomodation-card1 img,
+.accomodation-card2 img,
+.accomodation-card3 img,
+.accomodation-card4 img,
+.accomodation-card5 img,
+.accomodation-card6 img {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100% - 75px);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.accomodation-card1 figcaption,
+.accomodation-card2 figcaption,
+.accomodation-card3 figcaption,
+.accomodation-card4 figcaption,
+.accomodation-card5 figcaption,
+.accomodation-card6 figcaption {
+    height: 75px;
+    width: 100%;
+    color: black;
+    padding: 10px;
+}
+
+.showmore {
+    font-weight: bold;
+    width: 100%;
+}
+
+#activities {
+    display: grid;
+    grid-template-areas:
+        "activities-title"
+        "port"
+        "pomegue"
+        "iles"
+        "parc"
+        "dame"
+        "longchamp";
+    grid-template-rows: auto repeat(6, 220px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.activities-title {
+    grid-area: activities-title;
+}
+
+.activities-card1 {
+    grid-area: port;
+}
+
+.activities-card2 {
+    grid-area: pomegue;
+}
+
+.activities-card3 {
+    grid-area: iles;
+}
+
+.activities-card4 {
+    grid-area: parc;
+}
+
+.activities-card5 {
+    grid-area: dame;
+}
+
+.activities-card6 {
+    grid-area: longchamp;
+}
+
+.activitis-card7 {
+    grid-area: showmore;
+}
+
+#activities a figure {
+    height: 100%;
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+#activities a figure img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100% - 55px);
+    border-radius: 1rem 1rem 0 0;
+}
+
+#activities a figure figcaption {
+    height: 55px;
+    line-height: 55px;
+    padding: 0 10px;
+}
+
+#activities p {
+    font-weight: bold;
+    color: black;
+}
+
+footer nav {
+    display: grid;
+    grid-template-areas:
+        "navbar-title1"
+        "navbar-list1"
+        "navbar-title2"
+        "navbar-list2"
+        "navbar-title3"
+        "navbar-list3";
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.navbar-title1 {
+    grid-area: navbar-title1;
+}
+
+.navbar-title2 {
+    grid-area: navbar-title2;
+}
+
+.navbar-title3 {
+    grid-area: navbar-title3;
+}
+
+.navbar-list1 {
+    grid-area: navbar-list1;
+}
+
+.navbar-list2 {
+    grid-area: navbar-list2;
+}
+
+.navbar-list3 {
+    grid-area: navbar-list3;
+}
+
+footer h2 {
+    font-weight: bold;
+}
+
+/*
+img {
+width: 60%;
+border-radius: 10px;
+height: 100%;
+}
+*/
+
+
+h1 {
+    font-family: Raleway-Bold, Georgia, serif;
+    font-size: 1.5rem;
+
+}
+
+h2 {
+    font-family: Raleway-Bold, Georgia, serif;
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+h3 {
+    font-family: Raleway-Bold, Georgia, serif;
+    font-size: 1.1rem;
+}
+
+p{
+    color: black;
+    font-size: 1rem;
+}
+.btn-search span {
+    display: none;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+.grey-star {
+    color: silver;
+}
+
+
+
+#accomodation h2 {
+    text-align: left;
+}
+
+
+
