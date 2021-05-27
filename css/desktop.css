@@ -2,59 +2,73 @@ body {
     grid-template-areas:
             "header header"
             "search search"
-            "filters filters"
             "accomodation populary"
             "activities activities"
             "footer footer";
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
 }
+
 header nav ul {
     grid-template-areas:
         "navbar-logo navbar-accomodation navbar-activities navbar-register";
-    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr auto;
     grid-template-rows: 50px;
 }
+
 header nav ul li:nth-child(2) a {
     border-top: 2px solid #0065FC;
     border-bottom: none;
 }
+
 header nav ul li:nth-child(3) a {
     color: black;
     border-bottom: none;
+    margin-top:2px;
 }
+
 header nav ul li:nth-child(4) a {
-    padding-left: 10px;
+    padding: 2px;
 }
+
 .btn-search {
     border-radius: 0 10px 10px 0;
     width: 100px;
 }
-#populary {
-    border-radius: 20px;
-}
 #site-search {
-    width: 15%;
+    width: 20%;
 }
+
 .btn-search span {
     display: block;
 }
-i.fa-search{
+#search h3 {
+    padding:20px
+}
+#filters {
+     display: flex;
+     align-items: center;
+}
+.btnfiltre {
+    margin: 0 50px 10px 0;
+}
+i.fa-search {
     display: none;
+}
+#populary {
+    border-radius: 2rem;
 }
 #accomodation {
     background-color: #f3f3f3;
-    border-radius: 50px;
+    border-radius: 2rem;
 }
-#filters{
-    grid-template-areas:
-        "title economique familial romantique animaux";
-    grid-template-columns: 1fr 2fr 2fr 2fr 8fr ;
-    grid-template-rows: 50px;
-}
-.filters-title{
-    text-align: center;
-    padding: 5px;
+.accomodation-card1 section,
+.accomodation-card2 section,
+.accomodation-card3 section,
+.accomodation-card4 section,
+.accomodation-card5 section,
+.accomodation-card6 section {
+    height: 90%;
 }
 #populary {
     grid-template-areas:
@@ -62,11 +76,17 @@ i.fa-search{
         "soleil"
         "coeur"
         "hotelbleu";
-    grid-template-rows: 50px 140px 140px 140px;
-    margin-right: 2%;
+    grid-template-rows: 40px 150px 150px 150px;
+
 }
+
 .populary-title {
     padding: 3%;
+}
+.populary-card1 section,
+.populary-card2 section,
+.populary-card3 section {
+    box-shadow: 0 5px 10px white;
 }
 #accomodation {
     grid-template-areas:
@@ -76,8 +96,8 @@ i.fa-search{
         "showmore showmore showmore";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto repeat(2, 210px) auto;
-    margin-left: 2%;
 }
+
 #activities {
     grid-template-areas:
         "activities-title activities-title activities-title activities-title"
