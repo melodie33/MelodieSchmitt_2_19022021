@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("fonts/Raleway/Raleway-Regular.ttf");
+    src: url("/css/fonts/Raleway/Raleway-Regular.ttf");
 }
 
 @font-face {
     font-family: "Raleway-Bold";
-    src: url("fonts/Raleway/Raleway-Bold.ttf");
+    src: url("/css/fonts/Raleway/Raleway-Bold.ttf");
 }
 
 body {
