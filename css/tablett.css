@@ -1,6 +1,7 @@
 :root {
     font-size: 12px;
 }
+
 #accomodation {
     grid-template-areas:
         "accomodation-title accomodation-title"
@@ -11,6 +12,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(3, 240px) auto;
 }
+
 #activities {
     grid-template-areas:
         "activities-title activities-title"

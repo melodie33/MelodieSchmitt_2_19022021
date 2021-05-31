@@ -14,7 +14,7 @@
     />
     <link
             href="css/desktop.css"
-            media="screen and (min-width: 769px)"
+            media="screen and (min-width: 1024px)"
             rel="stylesheet"
     />
 
@@ -39,7 +39,7 @@
         </ul>
     </nav>
 </header>
-<section id="search">
+<form id="search">
     <!--informations -->
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
@@ -57,25 +57,32 @@
             <i class="fas fa-search"></i><span>Rechercher</span>
         </button>
     </div>
+
+
     <h3>Filtres</h3>
 
     <button class="btnfiltre">
         <i class="fas fa-money-bill-wave"></i><span>Économique</span>
     </button>
+
     <button class="btnfiltre">
         <i class="fa fa-child"></i><span>Familial</span>
     </button>
+
     <button class="btnfiltre">
         <i class="fas fa-heart"></i><span>Romantique</span>
     </button>
+
     <button class="btnfiltre">
         <i class="fas fa-dog"></i><span>Animaux autorisés</span>
     </button>
+
+
     <p>
         <i class="fas fa-info"></i>Plus de 500 logements sont
         disponibles dans cette ville
     </p>
-</section>
+</form>
 <article id="accomodation">
     <!--hebergements Marseille -->
     <header class="accomodation-title">
@@ -125,8 +132,12 @@
                             images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 768w,
                             images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1280w,
                             images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1980w"
+                        sizes="
+                            (max-width: 320px) 320px,
+                            (max-width: 768px) 768px,
+                            (max-width: 1280px) 1280px,
+                            1980px"
                 />
-
                 <figcaption>
                     <h2>Hôtel du Port</h2>
                     <p>Nuit à partir de <strong>52€</strong></p>
@@ -283,7 +294,7 @@
                 <img
                         src="
                             images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                alt="Hotêl"
+                        alt="Hotêl"
                         srcset="
                             images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 320w,
                             images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 768w,
@@ -352,7 +363,7 @@
                             images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 320w,
                             images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 768w,
                             images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1280w,
-                            images/hebergements/1_xlarge /febrian-zakaria-sjvU0THccQA-unsplash.jpg 1980w"
+                            images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1980w"
                         sizes="
                             (max-width: 320px) 320px,
                             (max-width: 768px) 768px,
@@ -396,7 +407,6 @@
                         (max-width: 768px) 768px,
                         (max-width: 1280px) 1280px,
                         1980px"
-
             />
             <figcaption>
                 <p>Vieux Port</p>

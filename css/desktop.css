@@ -42,13 +42,7 @@ header nav ul li:nth-child(4) a {
 .btn-search span {
     display: block;
 }
-#search h3 {
-    padding:20px
-}
-#filters {
-     display: flex;
-     align-items: center;
-}
+
 .btnfiltre {
     margin: 0 50px 10px 0;
 }
@@ -62,14 +56,7 @@ i.fa-search {
     background-color: #f3f3f3;
     border-radius: 2rem;
 }
-.accomodation-card1 section,
-.accomodation-card2 section,
-.accomodation-card3 section,
-.accomodation-card4 section,
-.accomodation-card5 section,
-.accomodation-card6 section {
-    height: 90%;
-}
+
 #populary {
     grid-template-areas:
         "titre"
@@ -80,14 +67,6 @@ i.fa-search {
 
 }
 
-.populary-title {
-    padding: 3%;
-}
-.populary-card1 section,
-.populary-card2 section,
-.populary-card3 section {
-    box-shadow: 0 5px 10px white;
-}
 #accomodation {
     grid-template-areas:
         "accomodation-title accomodation-title accomodation-title"
@@ -95,7 +74,7 @@ i.fa-search {
         "accomodation-card4 accomodation-card5 accomodation-card6"
         "showmore showmore showmore";
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto repeat(2, 210px) auto;
+    grid-template-rows: auto repeat(2, 200px) auto;
 }
 
 #activities {

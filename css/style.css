@@ -23,6 +23,7 @@ body {
             "accomodation"
             "activities"
             "footer";
+    grid-template-columns: 1fr;
 }
 
 .search-bar {
@@ -69,6 +70,11 @@ label {
     background-color: white;
 }
 
+.btnfiltre:hover {
+    background-color: #0065FC;
+    color: white;
+}
+
 .btnfiltre > span {
     padding: 0 10px;
 }
@@ -76,7 +82,6 @@ label {
 #search h3 {
     margin-bottom: 10px;
 }
-
 
 #search p {
     font-size: 1.4rem;
@@ -124,10 +129,12 @@ i.fas.fa-chart-line {
 #populary {
     grid-area: populary;
     background-color: #f3f3f3;
+    margin-right: 10px;
 }
 
 #accomodation {
     grid-area: accomodation;
+    margin-left: 10px;
 }
 
 #activities {
@@ -167,6 +174,7 @@ header nav ul li:nth-child(3) {
 
 header nav ul li:nth-child(4) {
     grid-area: navbar-register;
+    padding: 0 10px;
 }
 
 header nav ul li:nth-child(2) a, header nav ul li:nth-child(3) a {
@@ -193,6 +201,7 @@ header nav ul li:nth-child(4) a {
     padding-right: 10px;
     color: #0065FC;
     font-weight: bold;
+
 }
 
 #populary {
@@ -231,9 +240,9 @@ header nav ul li:nth-child(4) a {
 .populary-card2 section,
 .populary-card3 section {
     height: 100%;
-    box-shadow: 0 0 16px #0000002e;
-    border-radius: 1rem;
+    box-shadow: 0 5px 10px silver;
     box-sizing: border-box;
+    border-radius: 1rem
 }
 
 .populary-card1 figure,
@@ -241,6 +250,8 @@ header nav ul li:nth-child(4) a {
 .populary-card3 figure {
     height: 100%;
     display: flex;
+    background-color: white;
+    border-radius: 1rem;
 }
 
 .populary-card1 img,
@@ -255,14 +266,16 @@ header nav ul li:nth-child(4) a {
 .populary-card1 figcaption,
 .populary-card2 figcaption,
 .populary-card3 figcaption {
-    width: 60%;
+    width: 65%;
     padding: 10px;
     position: relative;
+    background-color: white;
+    border-radius: 0 1rem 1rem 0;
 }
 
 .populary-card1 figcaption > div,
 .populary-card2 figcaption > div,
-.populary-card3 figcaption > div{
+.populary-card3 figcaption > div {
     position: absolute;
     bottom: 5px;
 }
@@ -315,8 +328,6 @@ header nav ul li:nth-child(4) a {
 .showmore {
     grid-area: showmore;
 }
-
-
 .accomodation-card1 section,
 .accomodation-card2 section,
 .accomodation-card3 section,
@@ -324,10 +335,9 @@ header nav ul li:nth-child(4) a {
 .accomodation-card5 section,
 .accomodation-card6 section {
     height: 100%;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 5px 10px silver;
     border-radius: 1rem;
 }
-
 .accomodation-card1 figure,
 .accomodation-card2 figure,
 .accomodation-card3 figure,
@@ -338,7 +348,6 @@ header nav ul li:nth-child(4) a {
     width: 100%;
     padding: 3px;
 }
-
 .accomodation-card1 img,
 .accomodation-card2 img,
 .accomodation-card3 img,
@@ -361,6 +370,7 @@ header nav ul li:nth-child(4) a {
     width: 100%;
     color: black;
     padding: 10px;
+    background-color:white;
 }
 
 .showmore {
@@ -411,13 +421,9 @@ header nav ul li:nth-child(4) a {
     grid-area: longchamp;
 }
 
-.activitis-card7 {
-    grid-area: showmore;
-}
-
 #activities a figure {
     height: 100%;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 5px 10px silver;
     border-radius: 1rem;
     box-sizing: border-box;
 }
@@ -458,37 +464,25 @@ footer nav {
     grid-area: navbar-title1;
 }
 
-.navbar-title2 {
-    grid-area: navbar-title2;
-}
-
-.navbar-title3 {
-    grid-area: navbar-title3;
-}
-
 .navbar-list1 {
     grid-area: navbar-list1;
+}
+
+.navbar-title2 {
+    grid-area: navbar-title2;
 }
 
 .navbar-list2 {
     grid-area: navbar-list2;
 }
 
+.navbar-title3 {
+    grid-area: navbar-title3;
+}
+
 .navbar-list3 {
     grid-area: navbar-list3;
 }
-
-footer h2 {
-    font-weight: bold;
-}
-
-/*
-img {
-width: 60%;
-border-radius: 10px;
-height: 100%;
-}
-*/
 
 
 h1 {
@@ -509,10 +503,11 @@ h3 {
     font-size: 1.1rem;
 }
 
-p{
+p {
     color: black;
     font-size: 1rem;
 }
+
 .btn-search span {
     display: none;
 }
@@ -520,10 +515,10 @@ p{
 .fa-star {
     color: #0065FC;
 }
+
 .grey-star {
     color: silver;
 }
-
 
 
 #accomodation h2 {
